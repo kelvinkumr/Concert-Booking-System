@@ -31,14 +31,14 @@ The system consists of a client project and a service project, both packaged int
 3. Choose an available HTTP Port (e.g., 10000).
 4. Configure the application server by pointing to your Tomcat installation.
 5. Under the Deployment tab:
-  * Add both WAR artifacts (client and service).
-  * Set context paths:
-  * Service WAR → ```/webservice```
-  * Client WAR → ```/concert-webapp```
+   * Add both WAR artifacts (client and service).
+   * Set context paths:
+   * Service WAR → ```/webservice```
+   * Client WAR → ```/concert-webapp```
 6. In the Server tab, set the URL to: ```http://localhost:10000/concert-webapp/```
 7. Update configuration files if needed:
-  * ```Config.java``` → ```check WEB_SERVICE_URI```
-  * ```fetch-api.js``` → ```check WEB_URI```
+   * ```Config.java``` → ```check WEB_SERVICE_URI```
+   * ```fetch-api.js``` → ```check WEB_URI```
 8. From the configurations dropdown, select your Tomcat config and click Play.
 9. Stop the server when finished (you may need to click Stop twice until disconnected).
 
